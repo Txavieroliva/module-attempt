@@ -1,6 +1,6 @@
-name: dungeons-and-devilfruits-expanded-modules
+name: dungeons-and-devilfruits-expanded-module
 
-on: push
+on: [push]
 
 jobs:
   build:
