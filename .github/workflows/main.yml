@@ -11,7 +11,7 @@ jobs:
       shell: bash
       id: get-version
       run: echo "::set-output name=version::$(node ./.github/workflows/get-version.js)"
-    - run: zip -r ./dnd-DF.zip module.json dnd-DF.js lang/ templates/
+    - run: zip -r ./dnd-DF.zip module.json pack-art/ packs/ tokens/
     - name: Create Release                                # Create an additional release for this version
       id: create_versioned_release
       uses: ncipollo/release-action@v1
